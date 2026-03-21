@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n-meta="description" content="ВТ КРАН ООД - Автокран под наем в Бургас, Поморие, Несебър и региона. Liebherr LTM 1025, товароподемност 25 тона, стрела до 40 м. Квалифициран оператор с над 20 години опит." />
+  <meta property="og:title" data-i18n-meta="og:title" content="ВТ КРАН - Автокран под наем в Бургас, Поморие и Несебър" />
+  <meta property="og:description" data-i18n-meta="og:description" content="Професионални услуги с автокран Liebherr LTM 1025. Товароподемност 25 тона, квалифициран оператор с над 20 години опит." />
+  <meta property="og:type" content="website" />
+  <title data-i18n-title>ВТ КРАН - Автокран под наем | Бургас, Поморие, Несебър</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       ROOT VARIABLES & BASE STYLES
+    ============================================= */
+    :root {
+      --yellow:     #FFC107;
+      --yellow-dark:#e6a800;
+      --navy:       #0d1b2a;
+      --navy-mid:   #132338;
+      --navy-light: #1e3a5f;
+      --white:      #ffffff;
+      --gray-light: #f4f5f7;
+      --gray-mid:   #6c757d;
+      --gray-border:#dee2e6;
+      --font-head:  'Barlow Condensed', sans-serif;
+      --font-body:  'Inter', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--navy);
+      background: var(--white);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-head);
+      letter-spacing: 0.02em;
+    }
+
+    /* =============================================
+       NAVBAR
+    ============================================= */
+    .navbar-cranepro {
+      background: var(--navy) !important;
+      border-bottom: 3px solid var(--yellow);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    .navbar-cranepro .navbar-brand {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--white) !important;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar-cranepro .navbar-brand span {
+      color: var(--yellow);
+    }
+
+    .navbar-cranepro .nav-link {
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.5rem 1rem !important;
+      transition: color 0.2s;
+    }
+
+    .navbar-cranepro .nav-link:hover,
+    .navbar-cranepro .nav-link.active {
+      color: var(--yellow) !important;
+    }
+
+    .btn-call {
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-call:hover {
+      background: var(--yellow-dark);
+      color: var(--navy);
+      transform: translateY(-1px);
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255,255,255,0.3) !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    /* =============================================
+       LANGUAGE SWITCHER
+    ============================================= */
+    .lang-dropdown {
+      position: relative;
+    }
+
+    .lang-btn {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.2s, border-color 0.2s;
+      text-transform: uppercase;
+    }
+
+    .lang-btn:hover {
+      background: rgba(255,255,255,0.18);
+      border-color: var(--yellow);
+    }
+
+    .lang-btn .bi-chevron-down {
+      font-size: 0.7rem;
+      transition: transform 0.2s;
+    }
+
+    .lang-dropdown.open .lang-btn .bi-chevron-down {
+      transform: rotate(180deg);
+    }
+
+    .lang-menu {
+      position: absolute;
+      top: calc(100% + 0.4rem);
+      right: 0;
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      min-width: 140px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+      z-index: 1050;
+      overflow: hidden;
+    }
+
+    .lang-dropdown.open .lang-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.6rem 1rem;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      text-align: left;
+    }
+
+    .lang-option:hover {
+      background: rgba(255,193,7,0.1);
+      color: var(--white);
+    }
+
+    .lang-option.active {
+      background: rgba(255,193,7,0.15);
+      color: var(--yellow);
+      font-weight: 700;
+    }
+
+    @media (max-width: 991px) {
+      .lang-dropdown {
+        margin-top: 0.5rem;
+      }
+      .lang-menu {
+        right: auto;
+        left: 0;
+      }
+    }
+
+    /* =============================================
+       HERO SECTION
+    ============================================= */
+    .hero-section {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, var(--navy-light) 100%);
+    }
+
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(255,193,7,0.04) 0px,
+          rgba(255,193,7,0.04) 1px,
+          transparent 1px,
+          transparent 40px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          rgba(255,193,7,0.04) 0px,
+          rgba(255,193,7,0.04) 1px,
+          transparent 1px,
+          transparent 40px
+        );
+      pointer-events: none;
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: center/cover no-repeat;
+      opacity: 0.18;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255,193,7,0.15);
+      border: 1px solid rgba(255,193,7,0.4);
+      color: var(--yellow);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-head);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title .highlight {
+      color: var(--yellow);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .btn-hero-primary {
+      background: var(--yellow);
+      color: var(--navy);
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-hero-primary:hover {
+      background: var(--yellow-dark);
+      color: var(--navy);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-outline {
+      background: transparent;
+      color: var(--white);
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 2px solid rgba(255,255,255,0.4);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+
+    .btn-hero-outline:hover {
+      border-color: var(--yellow);
+      color: var(--yellow);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .hero-stat-number {
+      font-family: var(--font-head);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--yellow);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* =============================================
+       SECTION COMMON STYLES
+    ============================================= */
+    .section-label {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 2px;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.1;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--gray-mid);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* =============================================
+       SERVICES SECTION
+    ============================================= */
+    .services-section {
+      background: var(--gray-light);
+      padding: 5rem 0;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--gray-border);
+      border-radius: 6px;
+      padding: 2rem 1.75rem;
+      height: 100%;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--yellow);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(13,27,42,0.12);
+      border-color: transparent;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.6rem;
+      color: var(--yellow);
+    }
+
+    .service-card h5 {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.65rem;
+    }
+
+    .service-card p {
+      font-size: 0.93rem;
+      color: var(--gray-mid);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* =============================================
+       FLEET SECTION
+    ============================================= */
+    .fleet-section {
+      background: var(--navy);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fleet-section::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: rgba(255,193,7,0.05);
+      pointer-events: none;
+    }
+
+    .fleet-section .section-title {
+      color: var(--white);
+    }
+
+    .fleet-section .section-subtitle {
+      color: rgba(255,255,255,0.6);
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .spec-item:last-child {
+      border-bottom: none;
+    }
+
+    .spec-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(255,193,7,0.12);
+      border: 1px solid rgba(255,193,7,0.25);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+      color: var(--yellow);
+    }
+
+    .spec-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.15rem;
+    }
+
+    .spec-value {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    /* =============================================
+       WHY CHOOSE US STRIP
+    ============================================= */
+    .strip-section {
+      background: var(--yellow);
+      padding: 3.5rem 0;
+    }
+
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .strip-icon {
+      font-size: 2rem;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .strip-title {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.1rem;
+    }
+
+    .strip-desc {
+      font-size: 0.85rem;
+      color: rgba(13,27,42,0.7);
+      margin: 0;
+    }
+
+    /* =============================================
+       CONTACT SECTION
+    ============================================= */
+    .contact-section {
+      background: var(--gray-light);
+      padding: 5rem 0;
+    }
+
+    .contact-info-card {
+      background: var(--navy);
+      border-radius: 8px;
+      padding: 2.5rem;
+      color: var(--white);
+    }
+
+    .contact-info-title {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info-subtitle {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-detail-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(255,193,7,0.12);
+      border: 1px solid rgba(255,193,7,0.25);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+      color: var(--yellow);
+    }
+
+    .contact-detail-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-detail-value {
+      font-size: 0.97rem;
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .contact-detail-value a {
+      color: var(--yellow);
+      text-decoration: none;
+    }
+
+    .contact-detail-value a:hover {
+      text-decoration: underline;
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.25rem 0.75rem;
+      font-size: 0.88rem;
+      margin-top: 0.25rem;
+    }
+
+    .hours-day { color: rgba(255,255,255,0.6); }
+    .hours-time { color: var(--yellow); font-weight: 600; }
+
+    .emergency-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255,193,7,0.12);
+      border: 1px solid rgba(255,193,7,0.3);
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .emergency-badge i {
+      font-size: 1.3rem;
+      color: var(--yellow);
+    }
+
+    .emergency-text strong {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--yellow);
+    }
+
+    .emergency-text span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer {
+      background: #080f17;
+      color: rgba(255,255,255,0.55);
+      padding: 3.5rem 0 1.5rem;
+    }
+
+    .footer-brand {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: 0.03em;
+    }
+
+    .footer-brand span {
+      color: var(--yellow);
+    }
+
+    .footer-tagline {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.4rem;
+    }
+
+    .footer-heading {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-contact-item i {
+      color: var(--yellow);
+      width: 18px;
+    }
+
+    .footer-contact-item a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-contact-item a:hover {
+      color: var(--yellow);
+    }
+
+    .footer-divider {
+      border-color: rgba(255,255,255,0.08);
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .footer-bottom {
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-bottom a {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--yellow);
+    }
+
+    /* =============================================
+       GALLERY SECTION
+    ============================================= */
+    .gallery-section {
+      background: var(--gray-light);
+      padding: 5rem 0;
+    }
+
+    .gallery-carousel-wrapper {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .gallery-carousel {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/10;
+    }
+
+    .gallery-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .gallery-slide.active {
+      opacity: 1;
+    }
+
+    .gallery-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: rgba(13,27,42,0.7);
+      border: 2px solid rgba(255,193,7,0.4);
+      border-radius: 50%;
+      color: var(--yellow);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+      z-index: 3;
+    }
+
+    .gallery-btn:hover {
+      background: rgba(13,27,42,0.9);
+      border-color: var(--yellow);
+    }
+
+    .gallery-btn-prev { left: 1rem; }
+    .gallery-btn-next { right: 1rem; }
+
+    .gallery-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .gallery-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gray-border);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .gallery-dot.active {
+      background: var(--yellow);
+      transform: scale(1.2);
+    }
+
+    .gallery-thumbs {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery-thumb {
+      width: 80px;
+      height: 55px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, opacity 0.2s;
+      padding: 0;
+      background: none;
+      opacity: 0.6;
+    }
+
+    .gallery-thumb.active {
+      border-color: var(--yellow);
+      opacity: 1;
+    }
+
+    .gallery-thumb:hover {
+      opacity: 1;
+    }
+
+    .gallery-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* =============================================
+       RESPONSIVE TWEAKS
+    ============================================= */
+    @media (max-width: 767px) {
+      .hero-section { min-height: 75vh; }
+      .hero-stats { gap: 1.25rem; }
+      .strip-section .strip-item { justify-content: center; text-align: left; }
+      .contact-info-card { padding: 1.75rem; }
+      .gallery-btn { width: 38px; height: 38px; font-size: 1rem; }
+      .gallery-btn-prev { left: 0.5rem; }
+      .gallery-btn-next { right: 0.5rem; }
+      .gallery-thumb { width: 60px; height: 42px; }
+    }
+
+    @media (max-width: 575px) {
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       STICKY NAVBAR
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg navbar-cranepro sticky-top" id="mainNav">
+    <div class="container">
+      <!-- Brand / Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" fill="none" aria-hidden="true" style="flex-shrink:0;">
+          <!-- Truck cab -->
+          <rect x="2" y="36" width="18" height="14" rx="2" fill="#FFC107"/>
+          <rect x="4" y="39" width="7" height="6" rx="1" fill="#0d1b2a" opacity="0.6"/>
+          <!-- Truck bed / chassis -->
+          <rect x="18" y="42" width="34" height="8" rx="1" fill="#FFC107"/>
+          <!-- Wheels -->
+          <circle cx="9" cy="52" r="4" fill="#0d1b2a"/>
+          <circle cx="9" cy="52" r="2" fill="#FFC107"/>
+          <circle cx="38" cy="52" r="4" fill="#0d1b2a"/>
+          <circle cx="38" cy="52" r="2" fill="#FFC107"/>
+          <circle cx="50" cy="52" r="4" fill="#0d1b2a"/>
+          <circle cx="50" cy="52" r="2" fill="#FFC107"/>
+          <!-- Outrigger -->
+          <rect x="20" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
+          <rect x="48" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
+          <!-- Turntable / base of crane -->
+          <rect x="28" y="38" width="10" height="6" rx="1" fill="#e6a800"/>
+          <!-- Boom arm -->
+          <line x1="33" y1="40" x2="60" y2="6" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+          <!-- Counter-boom -->
+          <line x1="33" y1="40" x2="22" y2="30" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+          <!-- Hoist cable -->
+          <line x1="58" y1="8" x2="54" y2="28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          <!-- Hook -->
+          <circle cx="54" cy="30" r="2" fill="#ffffff" opacity="0.9"/>
+        </svg>
+        VT <span>KRAN</span>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" data-i18n="nav_home">Начало</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services" data-i18n="nav_services">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fleet" data-i18n="nav_fleet">Нашата машина</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery" data-i18n="nav_gallery">Галерия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-i18n="nav_contact">Контакт</a>
+          </li>
+
+          <!-- Language Switcher -->
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <div class="lang-dropdown" id="langDropdown">
+              <button class="lang-btn" id="langBtn" type="button" aria-expanded="false" aria-label="Change language">
+                <i class="bi bi-translate"></i>
+                <span id="langCurrentLabel">BG</span>
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <div class="lang-menu" id="langMenu">
+                <button class="lang-option active" data-lang="bg">BG</button>
+                <button class="lang-option" data-lang="en">EN</button>
+                <button class="lang-option" data-lang="ru">RU</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="tel:+359879638383" class="btn btn-call d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill"></i>
+              0879 63 83 83
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-image-overlay" style="background-image: url('img/crane.jpg');"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <div class="hero-badge">
+            <i class="bi bi-patch-check-fill"></i>
+            <span data-i18n="hero_badge">Квалифициран оператор с над 20 години опит</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero_title" data-i18n-html="true">
+            <span class="highlight">Автокран под наем</span><br>
+            в Бургас, Поморие<br>и Несебър
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Предлагаме автокран под наем с квалифициран оператор с над
+            20 години опит. Разполагаме с Liebherr LTM 1025 с товароподемност
+            25 тона и стрела до 40 м, подходящ за строителни и монтажни
+            дейности в региона на Бургас.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 hero-buttons">
+            <a href="#contact" class="btn btn-hero-primary d-flex align-items-center gap-2">
+              <i class="bi bi-chat-text-fill"></i>
+              <span data-i18n="hero_btn_contact">Свържете се с нас</span>
+            </a>
+            <a href="tel:+359879638383" class="btn btn-hero-outline d-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill"></i>
+              <span data-i18n="hero_btn_call">Обадете се</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-number">20+</div>
+              <div class="hero-stat-label" data-i18n="stat_experience">Години опит</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">25T</div>
+              <div class="hero-stat-label" data-i18n="stat_capacity">Товароподемност</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">40m</div>
+              <div class="hero-stat-label" data-i18n="stat_reach">Обсег на стрелата</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">Liebherr</div>
+              <div class="hero-stat-label">LTM 1025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <span class="section-label" data-i18n="services_label">Какво правим</span>
+        <h2 class="section-title" data-i18n="services_title">Нашите услуги</h2>
+        <p class="section-subtitle mx-auto" data-i18n="services_subtitle">
+          ВТ КРАН ООД предоставя професионални услуги с автокран в региона на Бургас
+          — Бургас, Поморие, Несебър и околностите.
+        </p>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Crane Hire Services -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-arrow-up-circle-fill"></i>
+            </div>
+            <h5 data-i18n="service1_title">Автокран под наем — 25T</h5>
+            <p data-i18n="service1_desc">Професионален автокран под наем с Liebherr LTM 1025. Товароподемност 25 тона и стрела до 40 метра за всякакви проекти.</p>
+          </div>
+        </div>
+
+        <!-- Hard-to-Reach Sites -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <h5 data-i18n="service2_title">Труднодостъпни обекти</h5>
+            <p data-i18n="service2_desc">Специализираме се в работа на труднодостъпни места, където прецизността и опитът са от съществено значение за безопасна и ефективна работа.</p>
+          </div>
+        </div>
+
+        <!-- Qualified Operator -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-person-badge-fill"></i>
+            </div>
+            <h5 data-i18n="service3_title">Квалифициран оператор</h5>
+            <p data-i18n="service3_desc">Всяка задача се изпълнява от квалифициран оператор с над 20 години практически опит в работа с кранове и тежки товари.</p>
+          </div>
+        </div>
+
+        <!-- Pre-Planning Software -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h5 data-i18n="service4_title">Софтуер за планиране</h5>
+            <p data-i18n="service4_desc">Използваме уникален, специално разработен софтуер от LIEBHERR за предварително планиране на работния процес, гарантирайки максимална безопасност и ефективност.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY CHOOSE US STRIP
+  ============================================================ -->
+  <section class="strip-section">
+    <div class="container">
+      <div class="row g-4 gy-4">
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="strip-item">
+            <div class="strip-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div>
+              <div class="strip-title" data-i18n="strip1_title">20+ години опит</div>
+              <p class="strip-desc" data-i18n="strip1_desc">Квалифициран оператор с над две десетилетия практически опит</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="strip-item">
+            <div class="strip-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <div>
+              <div class="strip-title">Liebherr LTM 1025</div>
+              <p class="strip-desc" data-i18n="strip2_desc">Първокласен кран с товароподемност 25 тона и стрела 40 м</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="strip-item">
+            <div class="strip-icon"><i class="bi bi-laptop"></i></div>
+            <div>
+              <div class="strip-title" data-i18n="strip3_title">Умно планиране</div>
+              <p class="strip-desc" data-i18n="strip3_desc">Уникален софтуер от LIEBHERR за предварително планиране на всеки работен процес</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="strip-item">
+            <div class="strip-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <div class="strip-title" data-i18n="strip4_title">Регионално покритие</div>
+              <p class="strip-desc" data-i18n="strip4_desc">Обслужваме Бургас, Поморие, Несебър и околностите</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FLEET / EQUIPMENT SECTION
+  ============================================================ -->
+  <section class="fleet-section" id="fleet">
+    <div class="container">
+
+      <div class="row justify-content-center g-5">
+
+        <!-- Specs -->
+        <div class="col-lg-8">
+          <div class="text-center mb-4">
+            <span class="section-label" data-i18n="fleet_label">Нашата машина</span>
+            <h2 class="section-title" style="color:var(--white);">Liebherr LTM 1025</h2>
+            <p class="section-subtitle" style="color:rgba(255,255,255,0.6);margin-bottom:2rem;" data-i18n="fleet_subtitle">
+              Нашият мобилен автокран Liebherr LTM 1025 се поддържа по най-високите стандарти,
+              оборудван с уникален софтуер за предварително планиране от LIEBHERR за максимална
+              безопасност и прецизност при всяка задача.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-arrow-up"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_capacity_label">Товароподемност</div>
+                  <div class="spec-value" data-i18n="spec_capacity_value">25 тона</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-rulers"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_reach_label">Максимален обсег на стрелата</div>
+                  <div class="spec-value" data-i18n="spec_reach_value">До 40 метра</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-building-fill-gear"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_application_label">Приложение</div>
+                  <div class="spec-value" data-i18n="spec_application_value">Строителство и монтаж</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_area_label">Зона на обслужване</div>
+                  <div class="spec-value" data-i18n="spec_area_value">Бургас, Поморие, Несебър и региона</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-laptop"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_software_label">Софтуер за планиране</div>
+                  <div class="spec-value" data-i18n="spec_software_value">Система за предварително планиране LIEBHERR</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-person-badge-fill"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec_operator_label">Оператор</div>
+                  <div class="spec-value" data-i18n="spec_operator_value">Квалифициран — 20+ години опит</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-center">
+            <a href="#contact" class="btn btn-hero-primary d-inline-flex align-items-center gap-2">
+              <i class="bi bi-chat-text-fill"></i>
+              <span data-i18n="fleet_btn_contact">Свържете се с нас</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY SECTION
+  ============================================================ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label" data-i18n="gallery_label">Галерия</span>
+        <h2 class="section-title" data-i18n="gallery_title">Автокран Liebherr 25T под наем в Бургас</h2>
+        <p class="section-subtitle mx-auto" data-i18n="gallery_subtitle">
+          Вижте нашия Liebherr LTM 1025 в действие при строителни и монтажни проекти
+          в Бургас, Поморие, Несебър и региона.
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <div class="gallery-carousel-wrapper">
+        <div class="gallery-carousel" id="galleryCarousel">
+          <div class="gallery-slide active">
+            <img src="img/crane.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/crane1.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/crane2.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/crane3.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/crane4.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/crane5.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="gallery-btn gallery-btn-prev" id="galleryPrev" aria-label="Previous image">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="gallery-btn gallery-btn-next" id="galleryNext" aria-label="Next image">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Dots / Indicators -->
+      <div class="gallery-dots" id="galleryDots">
+        <button class="gallery-dot active" data-index="0" aria-label="Go to image 1"></button>
+        <button class="gallery-dot" data-index="1" aria-label="Go to image 2"></button>
+        <button class="gallery-dot" data-index="2" aria-label="Go to image 3"></button>
+        <button class="gallery-dot" data-index="3" aria-label="Go to image 4"></button>
+        <button class="gallery-dot" data-index="4" aria-label="Go to image 5"></button>
+        <button class="gallery-dot" data-index="5" aria-label="Go to image 6"></button>
+      </div>
+
+      <!-- Thumbnail Strip -->
+      <div class="gallery-thumbs" id="galleryThumbs">
+        <button class="gallery-thumb active" data-index="0">
+          <img src="img/crane.jpg" alt="Thumbnail 1" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="1">
+          <img src="img/crane1.jpg" alt="Thumbnail 2" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="2">
+          <img src="img/crane2.jpg" alt="Thumbnail 3" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="3">
+          <img src="img/crane3.jpg" alt="Thumbnail 4" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="4">
+          <img src="img/crane4.jpg" alt="Thumbnail 5" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="5">
+          <img src="img/crane5.jpg" alt="Thumbnail 6" loading="lazy" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <span class="section-label" data-i18n="contact_label">Свържете се</span>
+        <h2 class="section-title" data-i18n="contact_title">Данни за контакт</h2>
+        <p class="section-subtitle mx-auto" data-i18n="contact_subtitle">
+          Свържете се с нас директно — ние сме тук, за да помогнем с вашите нужди от автокран.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Contact Info -->
+        <div class="col-lg-8 col-xl-6">
+          <div class="contact-info-card">
+            <div class="contact-info-title" data-i18n="contact_card_title">Данни за контакт</div>
+            <p class="contact-info-subtitle" data-i18n="contact_card_subtitle">Свържете се с нас директно — ние сме тук, за да помогнем.</p>
+
+            <!-- Phone / Viber -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div class="contact-detail-label" data-i18n="contact_phone_label">Телефон / Viber</div>
+                <div class="contact-detail-value">
+                  <a href="tel:+359879638383">0879 63 83 83</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div class="contact-detail-label" data-i18n="contact_email_label">Имейл</div>
+                <div class="contact-detail-value">
+                  <a href="mailto:vtkran87@gmail.com">vtkran87@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Area -->
+            <div class="contact-detail">
+              <div class="contact-detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="contact-detail-label" data-i18n="contact_area_label">Зона на обслужване</div>
+                <div class="contact-detail-value" data-i18n="contact_area_value" data-i18n-html="true">
+                  Бургас, Поморие, Несебър<br>
+                  и околния регион
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 gy-5">
+
+        <!-- Brand -->
+        <div class="col-md-4">
+          <div class="footer-brand d-flex align-items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true" style="flex-shrink:0;">
+              <rect x="2" y="36" width="18" height="14" rx="2" fill="#FFC107"/>
+              <rect x="4" y="39" width="7" height="6" rx="1" fill="#0d1b2a" opacity="0.6"/>
+              <rect x="18" y="42" width="34" height="8" rx="1" fill="#FFC107"/>
+              <circle cx="9" cy="52" r="4" fill="#0d1b2a"/>
+              <circle cx="9" cy="52" r="2" fill="#FFC107"/>
+              <circle cx="38" cy="52" r="4" fill="#0d1b2a"/>
+              <circle cx="38" cy="52" r="2" fill="#FFC107"/>
+              <circle cx="50" cy="52" r="4" fill="#0d1b2a"/>
+              <circle cx="50" cy="52" r="2" fill="#FFC107"/>
+              <rect x="20" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
+              <rect x="48" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
+              <rect x="28" y="38" width="10" height="6" rx="1" fill="#e6a800"/>
+              <line x1="33" y1="40" x2="60" y2="6" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
+              <line x1="33" y1="40" x2="22" y2="30" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
+              <line x1="58" y1="8" x2="54" y2="28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+              <circle cx="54" cy="30" r="2" fill="#ffffff" opacity="0.9"/>
+            </svg>
+            VT <span>KRAN</span>
+          </div>
+          <p class="footer-tagline mt-2 mb-3" data-i18n="footer_tagline" data-i18n-html="true">
+            Професионални услуги с автокран в<br>Бургас, Поморие, Несебър и региона.
+          </p>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+359879638383">0879 63 83 83</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:vtkran87@gmail.com">vtkran87@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span data-i18n="footer_area">Бургас, Поморие, Несебър и региона</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-2 offset-md-1">
+          <div class="footer-heading" data-i18n="footer_quick_links">Бързи връзки</div>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="nav_home">Начало</a></li>
+            <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+            <li><a href="#fleet" data-i18n="nav_fleet">Нашата машина</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Галерия</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Контакт</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-6 col-md-3">
+          <div class="footer-heading" data-i18n="footer_services_heading">Услуги</div>
+          <ul class="footer-links">
+            <li><a href="#services" data-i18n="footer_service1">Автокран под наем — 25T</a></li>
+            <li><a href="#services" data-i18n="footer_service2">Труднодостъпни обекти</a></li>
+            <li><a href="#services" data-i18n="footer_service3">Квалифициран оператор</a></li>
+            <li><a href="#services" data-i18n="footer_service4">Софтуер за планиране</a></li>
+          </ul>
+        </div>
+
+        <!-- Machine Info -->
+        <div class="col-md-2">
+          <div class="footer-heading" data-i18n="footer_machine_heading">Нашата машина</div>
+          <ul class="footer-links">
+            <li><i class="bi bi-gear-fill me-1" style="color:var(--yellow);"></i> Liebherr LTM 1025</li>
+            <li><i class="bi bi-arrow-up me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_capacity">25 тона товароподемност</span></li>
+            <li><i class="bi bi-rulers me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_reach">Стрела 40 м</span></li>
+            <li><i class="bi bi-person-badge-fill me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_exp">20+ години опит</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="row align-items-center footer-bottom">
+        <div class="col-md-6">
+          &copy; <span id="currentYear"></span> VT KRAN OOD. <span data-i18n="footer_rights">Всички права запазени.</span>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="#" data-i18n="footer_privacy">Политика за поверителност</a>
+          <span class="mx-2">|</span>
+          <a href="#" data-i18n="footer_terms">Условия за ползване</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       BOOTSTRAP 5 JS (Bundle with Popper)
+  ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <script>
+    /* ============================================================
+       FOOTER: Dynamic current year
+    ============================================================ */
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    /* ============================================================
+       NAVBAR: Active link on scroll + shrink effect
+    ============================================================ */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-cranepro .nav-link');
+
+    function updateActiveLink() {
+      const scrollY = window.scrollY;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + sectionId) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+    /* Close mobile nav on link click */
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const navCollapse = document.getElementById('navbarMain');
+        const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+        if (bsCollapse) bsCollapse.hide();
+      });
+    });
+
+    /* ============================================================
+       GALLERY CAROUSEL
+    ============================================================ */
+    (function() {
+      const slides = document.querySelectorAll('.gallery-slide');
+      const dots   = document.querySelectorAll('.gallery-dot');
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+      const btnPrev = document.getElementById('galleryPrev');
+      const btnNext = document.getElementById('galleryNext');
+      let current = 0;
+      let autoTimer = null;
+
+      function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        thumbs[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+        thumbs[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function startAuto() {
+        stopAuto();
+        autoTimer = setInterval(next, 4000);
+      }
+
+      function stopAuto() {
+        if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+      }
+
+      btnNext.addEventListener('click', () => { next(); startAuto(); });
+      btnPrev.addEventListener('click', () => { prev(); startAuto(); });
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          goTo(parseInt(dot.dataset.index, 10));
+          startAuto();
+        });
+      });
+
+      thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+          goTo(parseInt(thumb.dataset.index, 10));
+          startAuto();
+        });
+      });
+
+      /* Swipe support for mobile */
+      let touchStartX = 0;
+      let touchEndX = 0;
+      const carousel = document.getElementById('galleryCarousel');
+
+      carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAuto();
+      }, { passive: true });
+
+      carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) next(); else prev();
+        }
+        startAuto();
+      }, { passive: true });
+
+      /* Keyboard support */
+      document.addEventListener('keydown', (e) => {
+        const gallerySection = document.getElementById('gallery');
+        const rect = gallerySection.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inView) {
+          if (e.key === 'ArrowLeft') { prev(); startAuto(); }
+          if (e.key === 'ArrowRight') { next(); startAuto(); }
+        }
+      });
+
+      /* Start auto-play */
+      startAuto();
+    })();
+
+    /* ============================================================
+       MULTILINGUAL SUPPORT (BG / EN / RU)
+    ============================================================ */
+    (function() {
+      /* ---- Translation dictionary ---- */
+      const translations = {
+        bg: {
+          /* Meta & Title */
+          title: 'ВТ КРАН - Автокран под наем | Бургас, Поморие, Несебър',
+          description: 'ВТ КРАН ООД - Автокран под наем в Бургас, Поморие, Несебър и региона. Liebherr LTM 1025, товароподемност 25 тона, стрела до 40 м. Квалифициран оператор с над 20 години опит.',
+          'og:title': 'ВТ КРАН - Автокран под наем в Бургас, Поморие и Несебър',
+          'og:description': 'Професионални услуги с автокран Liebherr LTM 1025. Товароподемност 25 тона, квалифициран оператор с над 20 години опит.',
+
+          /* Navbar */
+          nav_home: 'Начало',
+          nav_services: 'Услуги',
+          nav_fleet: 'Нашата машина',
+          nav_gallery: 'Галерия',
+          nav_contact: 'Контакт',
+
+          /* Hero */
+          hero_badge: 'Квалифициран оператор с над 20 години опит',
+          hero_title: '<span class="highlight">Автокран под наем</span><br>в Бургас, Поморие<br>и Несебър',
+          hero_subtitle: 'Предлагаме автокран под наем с квалифициран оператор с над 20 години опит. Разполагаме с Liebherr LTM 1025 с товароподемност 25 тона и стрела до 40 м, подходящ за строителни и монтажни дейности в региона на Бургас.',
+          hero_btn_contact: 'Свържете се с нас',
+          hero_btn_call: 'Обадете се',
+          stat_experience: 'Години опит',
+          stat_capacity: 'Товароподемност',
+          stat_reach: 'Обсег на стрелата',
+
+          /* Services */
+          services_label: 'Какво правим',
+          services_title: 'Нашите услуги',
+          services_subtitle: 'ВТ КРАН ООД предоставя професионални услуги с автокран в региона на Бургас — Бургас, Поморие, Несебър и околностите.',
+          service1_title: 'Автокран под наем — 25T',
+          service1_desc: 'Професионален автокран под наем с Liebherr LTM 1025. Товароподемност 25 тона и стрела до 40 метра за всякакви проекти.',
+          service2_title: 'Труднодостъпни обекти',
+          service2_desc: 'Специализираме се в работа на труднодостъпни места, където прецизността и опитът са от съществено значение за безопасна и ефективна работа.',
+          service3_title: 'Квалифициран оператор',
+          service3_desc: 'Всяка задача се изпълнява от квалифициран оператор с над 20 години практически опит в работа с кранове и тежки товари.',
+          service4_title: 'Софтуер за планиране',
+          service4_desc: 'Използваме уникален, специално разработен софтуер от LIEBHERR за предварително планиране на работния процес, гарантирайки максимална безопасност и ефективност.',
+
+          /* Strip */
+          strip1_title: '20+ години опит',
+          strip1_desc: 'Квалифициран оператор с над две десетилетия практически опит',
+          strip2_desc: 'Първокласен кран с товароподемност 25 тона и стрела 40 м',
+          strip3_title: 'Умно планиране',
+          strip3_desc: 'Уникален софтуер от LIEBHERR за предварително планиране на всеки работен процес',
+          strip4_title: 'Регионално покритие',
+          strip4_desc: 'Обслужваме Бургас, Поморие, Несебър и околностите',
+
+          /* Fleet */
+          fleet_label: 'Нашата машина',
+          fleet_subtitle: 'Нашият мобилен автокран Liebherr LTM 1025 се поддържа по най-високите стандарти, оборудван с уникален софтуер за предварително планиране от LIEBHERR за максимална безопасност и прецизност при всяка задача.',
+          fleet_btn_contact: 'Свържете се с нас',
+          spec_capacity_label: 'Товароподемност',
+          spec_capacity_value: '25 тона',
+          spec_reach_label: 'Максимален обсег на стрелата',
+          spec_reach_value: 'До 40 метра',
+          spec_application_label: 'Приложение',
+          spec_application_value: 'Строителство и монтаж',
+          spec_area_label: 'Зона на обслужване',
+          spec_area_value: 'Бургас, Поморие, Несебър и региона',
+          spec_software_label: 'Софтуер за планиране',
+          spec_software_value: 'Система за предварително планиране LIEBHERR',
+          spec_operator_label: 'Оператор',
+          spec_operator_value: 'Квалифициран — 20+ години опит',
+
+          /* Gallery */
+          gallery_label: 'Галерия',
+          gallery_title: 'Автокран Liebherr 25T под наем в Бургас',
+          gallery_subtitle: 'Вижте нашия Liebherr LTM 1025 в действие при строителни и монтажни проекти в Бургас, Поморие, Несебър и региона.',
+
+          /* Contact */
+          contact_label: 'Свържете се',
+          contact_title: 'Данни за контакт',
+          contact_subtitle: 'Свържете се с нас директно — ние сме тук, за да помогнем с вашите нужди от автокран.',
+          contact_card_title: 'Данни за контакт',
+          contact_card_subtitle: 'Свържете се с нас директно — ние сме тук, за да помогнем.',
+          contact_phone_label: 'Телефон / Viber',
+          contact_email_label: 'Имейл',
+          contact_area_label: 'Зона на обслужване',
+          contact_area_value: 'Бургас, Поморие, Несебър<br>и околния регион',
+
+          /* Footer */
+          footer_tagline: 'Професионални услуги с автокран в<br>Бургас, Поморие, Несебър и региона.',
+          footer_area: 'Бургас, Поморие, Несебър и региона',
+          footer_quick_links: 'Бързи връзки',
+          footer_services_heading: 'Услуги',
+          footer_service1: 'Автокран под наем — 25T',
+          footer_service2: 'Труднодостъпни обекти',
+          footer_service3: 'Квалифициран оператор',
+          footer_service4: 'Софтуер за планиране',
+          footer_machine_heading: 'Нашата машина',
+          footer_machine_capacity: '25 тона товароподемност',
+          footer_machine_reach: 'Стрела 40 м',
+          footer_machine_exp: '20+ години опит',
+          footer_rights: 'Всички права запазени.',
+          footer_privacy: 'Политика за поверителност',
+          footer_terms: 'Условия за ползване'
+        },
+
+        en: {
+          /* Meta & Title */
+          title: 'VT KRAN - Mobile Crane for Hire | Burgas, Pomorie, Nessebar',
+          description: 'VT KRAN OOD - Mobile Crane for Hire in Burgas, Pomorie, Nessebar and the region. Liebherr LTM 1025, 25-tonne capacity, boom reach up to 40 m. Qualified operator with 20+ years of experience.',
+          'og:title': 'VT KRAN - Mobile Crane for Hire in Burgas, Pomorie & Nessebar',
+          'og:description': 'Professional mobile crane services with Liebherr LTM 1025. 25-tonne capacity, qualified operator with 20+ years of experience.',
+
+          /* Navbar */
+          nav_home: 'Home',
+          nav_services: 'Services',
+          nav_fleet: 'Our Machine',
+          nav_gallery: 'Gallery',
+          nav_contact: 'Contact',
+
+          /* Hero */
+          hero_badge: 'Qualified Operator with 20+ Years Experience',
+          hero_title: 'Mobile <span class="highlight">Crane for Hire</span><br>in Burgas, Pomorie<br>& Nessebar',
+          hero_subtitle: 'We offer a mobile crane for hire with a qualified operator with over 20 years of experience. We operate a Liebherr LTM 1025 with a 25-tonne lifting capacity and boom reach up to 40 m, suitable for construction and installation work in the Burgas region.',
+          hero_btn_contact: 'Contact Us',
+          hero_btn_call: 'Call Now',
+          stat_experience: 'Years Experience',
+          stat_capacity: 'Lifting Capacity',
+          stat_reach: 'Boom Reach',
+
+          /* Services */
+          services_label: 'What We Do',
+          services_title: 'Our Services',
+          services_subtitle: 'VT KRAN OOD provides professional mobile crane services in the Burgas region — Burgas, Pomorie, Nessebar, and surrounding areas.',
+          service1_title: 'Crane Hire Services — 25T',
+          service1_desc: 'Professional mobile crane hire with Liebherr LTM 1025. 25-tonne lifting capacity with boom reach up to 40 metres for all types of projects.',
+          service2_title: 'Hard-to-Reach Sites',
+          service2_desc: 'We specialize in working at difficult-to-access locations where precision and experience are essential for safe and efficient operations.',
+          service3_title: 'Qualified Operator',
+          service3_desc: 'Every job is performed by a qualified operator with over 20 years of hands-on experience in crane operations and heavy lifting.',
+          service4_title: 'Pre-Planning Software',
+          service4_desc: 'We use a unique, purpose-built software by LIEBHERR for advance planning of the work process, ensuring maximum safety and efficiency.',
+
+          /* Strip */
+          strip1_title: '20+ Years Experience',
+          strip1_desc: 'Qualified operator with over two decades of hands-on expertise',
+          strip2_desc: 'Premium crane with 25-tonne capacity and 40 m boom reach',
+          strip3_title: 'Smart Planning',
+          strip3_desc: 'Unique LIEBHERR software for pre-planning of every work process',
+          strip4_title: 'Regional Coverage',
+          strip4_desc: 'Serving Burgas, Pomorie, Nessebar and the surrounding area',
+
+          /* Fleet */
+          fleet_label: 'Our Machine',
+          fleet_subtitle: 'Our Liebherr LTM 1025 mobile crane is maintained to the highest standards, equipped with unique LIEBHERR pre-planning software for maximum safety and precision on every job.',
+          fleet_btn_contact: 'Contact Us',
+          spec_capacity_label: 'Lifting Capacity',
+          spec_capacity_value: '25 Tonnes',
+          spec_reach_label: 'Maximum Boom Reach',
+          spec_reach_value: 'Up to 40 Metres',
+          spec_application_label: 'Application',
+          spec_application_value: 'Construction & Installation',
+          spec_area_label: 'Service Area',
+          spec_area_value: 'Burgas, Pomorie, Nessebar & Region',
+          spec_software_label: 'Planning Software',
+          spec_software_value: 'LIEBHERR Pre-Planning System',
+          spec_operator_label: 'Operator',
+          spec_operator_value: 'Qualified — 20+ Years Experience',
+
+          /* Gallery */
+          gallery_label: 'Gallery',
+          gallery_title: 'Liebherr 25T Crane for Hire in Burgas',
+          gallery_subtitle: 'See our Liebherr LTM 1025 in action across construction and installation projects in Burgas, Pomorie, Nessebar and the region.',
+
+          /* Contact */
+          contact_label: 'Get in Touch',
+          contact_title: 'Contact Details',
+          contact_subtitle: 'Reach us directly — we\'re here to help with your crane needs.',
+          contact_card_title: 'Contact Details',
+          contact_card_subtitle: 'Reach us directly — we\'re here to help.',
+          contact_phone_label: 'Phone / Viber',
+          contact_email_label: 'Email',
+          contact_area_label: 'Service Area',
+          contact_area_value: 'Burgas, Pomorie, Nessebar<br>and the surrounding region',
+
+          /* Footer */
+          footer_tagline: 'Professional mobile crane services in<br>Burgas, Pomorie, Nessebar and the region.',
+          footer_area: 'Burgas, Pomorie, Nessebar & region',
+          footer_quick_links: 'Quick Links',
+          footer_services_heading: 'Services',
+          footer_service1: 'Crane Hire — 25T',
+          footer_service2: 'Hard-to-Reach Sites',
+          footer_service3: 'Qualified Operator',
+          footer_service4: 'Pre-Planning Software',
+          footer_machine_heading: 'Our Machine',
+          footer_machine_capacity: '25 Tonnes Capacity',
+          footer_machine_reach: '40 m Boom Reach',
+          footer_machine_exp: '20+ Years Exp.',
+          footer_rights: 'All rights reserved.',
+          footer_privacy: 'Privacy Policy',
+          footer_terms: 'Terms of Service'
+        },
+
+        ru: {
+          /* Meta & Title */
+          title: 'ВТ КРАН - Автокран в аренду | Бургас, Поморие, Несебр',
+          description: 'ВТ КРАН ООД - Автокран в аренду в Бургасе, Поморие, Несебре и регионе. Liebherr LTM 1025, грузоподъёмность 25 тонн, вылет стрелы до 40 м. Квалифицированный оператор с более чем 20-летним опытом.',
+          'og:title': 'ВТ КРАН - Автокран в аренду в Бургасе, Поморие и Несебре',
+          'og:description': 'Профессиональные услуги автокрана Liebherr LTM 1025. Грузоподъёмность 25 тонн, квалифицированный оператор с более чем 20-летним опытом.',
+
+          /* Navbar */
+          nav_home: 'Главная',
+          nav_services: 'Услуги',
+          nav_fleet: 'Наша техника',
+          nav_gallery: 'Галерея',
+          nav_contact: 'Контакт',
+
+          /* Hero */
+          hero_badge: 'Квалифицированный оператор с более чем 20-летним опытом',
+          hero_title: '<span class="highlight">Автокран в аренду</span><br>в Бургасе, Поморие<br>и Несебре',
+          hero_subtitle: 'Предлагаем автокран в аренду с квалифицированным оператором с более чем 20-летним опытом. Мы работаем на Liebherr LTM 1025 с грузоподъёмностью 25 тонн и вылетом стрелы до 40 м, подходящим для строительных и монтажных работ в регионе Бургаса.',
+          hero_btn_contact: 'Свяжитесь с нами',
+          hero_btn_call: 'Позвоните',
+          stat_experience: 'Лет опыта',
+          stat_capacity: 'Грузоподъёмность',
+          stat_reach: 'Вылет стрелы',
+
+          /* Services */
+          services_label: 'Чем мы занимаемся',
+          services_title: 'Наши услуги',
+          services_subtitle: 'ВТ КРАН ООД предоставляет профессиональные услуги автокрана в регионе Бургаса — Бургас, Поморие, Несебр и окрестности.',
+          service1_title: 'Аренда автокрана — 25T',
+          service1_desc: 'Профессиональная аренда автокрана Liebherr LTM 1025. Грузоподъёмность 25 тонн и вылет стрелы до 40 метров для любых проектов.',
+          service2_title: 'Труднодоступные объекты',
+          service2_desc: 'Мы специализируемся на работе в труднодоступных местах, где точность и опыт необходимы для безопасного и эффективного выполнения работ.',
+          service3_title: 'Квалифицированный оператор',
+          service3_desc: 'Каждая работа выполняется квалифицированным оператором с более чем 20-летним практическим опытом работы с кранами и тяжёлыми грузами.',
+          service4_title: 'Программное обеспечение для планирования',
+          service4_desc: 'Мы используем уникальное специализированное программное обеспечение LIEBHERR для предварительного планирования рабочего процесса, обеспечивая максимальную безопасность и эффективность.',
+
+          /* Strip */
+          strip1_title: '20+ лет опыта',
+          strip1_desc: 'Квалифицированный оператор с более чем двадцатилетним практическим опытом',
+          strip2_desc: 'Первоклассный кран грузоподъёмностью 25 тонн и вылетом стрелы 40 м',
+          strip3_title: 'Умное планирование',
+          strip3_desc: 'Уникальное ПО от LIEBHERR для предварительного планирования каждого рабочего процесса',
+          strip4_title: 'Региональное покрытие',
+          strip4_desc: 'Обслуживаем Бургас, Поморие, Несебр и окрестности',
+
+          /* Fleet */
+          fleet_label: 'Наша техника',
+          fleet_subtitle: 'Наш мобильный автокран Liebherr LTM 1025 обслуживается по самым высоким стандартам, оснащён уникальным программным обеспечением LIEBHERR для предварительного планирования, обеспечивая максимальную безопасность и точность при каждой работе.',
+          fleet_btn_contact: 'Свяжитесь с нами',
+          spec_capacity_label: 'Грузоподъёмность',
+          spec_capacity_value: '25 тонн',
+          spec_reach_label: 'Максимальный вылет стрелы',
+          spec_reach_value: 'До 40 метров',
+          spec_application_label: 'Применение',
+          spec_application_value: 'Строительство и монтаж',
+          spec_area_label: 'Зона обслуживания',
+          spec_area_value: 'Бургас, Поморие, Несебр и регион',
+          spec_software_label: 'ПО для планирования',
+          spec_software_value: 'Система предварительного планирования LIEBHERR',
+          spec_operator_label: 'Оператор',
+          spec_operator_value: 'Квалифицированный — 20+ лет опыта',
+
+          /* Gallery */
+          gallery_label: 'Галерея',
+          gallery_title: 'Автокран Liebherr 25T в аренду в Бургасе',
+          gallery_subtitle: 'Посмотрите наш Liebherr LTM 1025 в действии на строительных и монтажных проектах в Бургасе, Поморие, Несебре и регионе.',
+
+          /* Contact */
+          contact_label: 'Свяжитесь с нами',
+          contact_title: 'Контактные данные',
+          contact_subtitle: 'Свяжитесь с нами напрямую — мы здесь, чтобы помочь с вашими потребностями в автокране.',
+          contact_card_title: 'Контактные данные',
+          contact_card_subtitle: 'Свяжитесь с нами напрямую — мы здесь, чтобы помочь.',
+          contact_phone_label: 'Телефон / Viber',
+          contact_email_label: 'Эл. почта',
+          contact_area_label: 'Зона обслуживания',
+          contact_area_value: 'Бургас, Поморие, Несебр<br>и прилегающий регион',
+
+          /* Footer */
+          footer_tagline: 'Профессиональные услуги автокрана в<br>Бургасе, Поморие, Несебре и регионе.',
+          footer_area: 'Бургас, Поморие, Несебр и регион',
+          footer_quick_links: 'Быстрые ссылки',
+          footer_services_heading: 'Услуги',
+          footer_service1: 'Аренда автокрана — 25T',
+          footer_service2: 'Труднодоступные объекты',
+          footer_service3: 'Квалифицированный оператор',
+          footer_service4: 'ПО для планирования',
+          footer_machine_heading: 'Наша техника',
+          footer_machine_capacity: '25 тонн грузоподъёмность',
+          footer_machine_reach: 'Стрела 40 м',
+          footer_machine_exp: '20+ лет опыта',
+          footer_rights: 'Все права защищены.',
+          footer_privacy: 'Политика конфиденциальности',
+          footer_terms: 'Условия использования'
+        }
+      };
+
+      /* ---- Labels per language ---- */
+      const langMeta = {
+        bg: { label: 'BG' },
+        en: { label: 'EN' },
+        ru: { label: 'RU' }
+      };
+
+      /* ---- DOM refs ---- */
+      const langDropdown = document.getElementById('langDropdown');
+      const langBtn      = document.getElementById('langBtn');
+      const langMenu     = document.getElementById('langMenu');
+      const langCurrentLabel = document.getElementById('langCurrentLabel');
+      const langOptions  = document.querySelectorAll('.lang-option');
+
+      /* ---- Apply translations ---- */
+      function setLanguage(lang) {
+        const dict = translations[lang];
+        if (!dict) return;
+
+        /* Update all data-i18n elements */
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) {
+            if (el.hasAttribute('data-i18n-html')) {
+              el.innerHTML = dict[key];
+            } else {
+              el.textContent = dict[key];
+            }
+          }
+        });
+
+        /* Update <title> */
+        if (dict.title) {
+          document.title = dict.title;
+        }
+
+        /* Update meta description */
+        const metaDesc = document.querySelector('meta[data-i18n-meta="description"]');
+        if (metaDesc && dict.description) {
+          metaDesc.setAttribute('content', dict.description);
+        }
+
+        /* Update og:title */
+        const ogTitle = document.querySelector('meta[data-i18n-meta="og:title"]');
+        if (ogTitle && dict['og:title']) {
+          ogTitle.setAttribute('content', dict['og:title']);
+        }
+
+        /* Update og:description */
+        const ogDesc = document.querySelector('meta[data-i18n-meta="og:description"]');
+        if (ogDesc && dict['og:description']) {
+          ogDesc.setAttribute('content', dict['og:description']);
+        }
+
+        /* Update html lang attribute */
+        document.documentElement.lang = lang;
+
+        /* Update language switcher button */
+        langCurrentLabel.textContent = langMeta[lang].label;
+
+        /* Update active state on options */
+        langOptions.forEach(opt => {
+          opt.classList.toggle('active', opt.dataset.lang === lang);
+        });
+
+        /* Persist selection */
+        try { localStorage.setItem('vtkran-lang', lang); } catch(e) {}
+      }
+
+      /* ---- Toggle dropdown ---- */
+      langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('open');
+        langBtn.setAttribute('aria-expanded', langDropdown.classList.contains('open'));
+      });
+
+      /* ---- Select language ---- */
+      langOptions.forEach(opt => {
+        opt.addEventListener('click', (e) => {
+          e.stopPropagation();
+          setLanguage(opt.dataset.lang);
+          langDropdown.classList.remove('open');
+          langBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      /* ---- Close dropdown on outside click ---- */
+      document.addEventListener('click', () => {
+        langDropdown.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
+      });
+
+      /* ---- Close dropdown on Escape ---- */
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          langDropdown.classList.remove('open');
+          langBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      /* ---- Load saved language on init ---- */
+      let savedLang = 'bg';
+      try { savedLang = localStorage.getItem('vtkran-lang') || 'bg'; } catch(e) {}
+      if (!translations[savedLang]) savedLang = 'bg';
+
+      /* Apply saved language (if not default BG, swap text) */
+      if (savedLang !== 'bg') {
+        setLanguage(savedLang);
+      } else {
+        /* Still update the dropdown active state for BG */
+        langOptions.forEach(opt => {
+          opt.classList.toggle('active', opt.dataset.lang === 'bg');
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
