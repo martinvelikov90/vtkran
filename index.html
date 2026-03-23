@@ -64,11 +64,13 @@
     }
 
     .navbar-cranepro .navbar-brand {
-      font-family: var(--font-head);
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--white) !important;
-      letter-spacing: 0.03em;
+      padding: 0;
+    }
+
+    .navbar-cranepro .navbar-brand .navbar-logo {
+      height: 46px;
+      width: auto;
+      display: block;
     }
 
     .navbar-cranepro .navbar-brand span {
@@ -949,35 +951,8 @@
   <nav class="navbar navbar-expand-lg navbar-cranepro sticky-top" id="mainNav">
     <div class="container">
       <!-- Brand / Logo -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" fill="none" aria-hidden="true" style="flex-shrink:0;">
-          <!-- Truck cab -->
-          <rect x="2" y="36" width="18" height="14" rx="2" fill="#FFC107"/>
-          <rect x="4" y="39" width="7" height="6" rx="1" fill="#0d1b2a" opacity="0.6"/>
-          <!-- Truck bed / chassis -->
-          <rect x="18" y="42" width="34" height="8" rx="1" fill="#FFC107"/>
-          <!-- Wheels -->
-          <circle cx="9" cy="52" r="4" fill="#0d1b2a"/>
-          <circle cx="9" cy="52" r="2" fill="#FFC107"/>
-          <circle cx="38" cy="52" r="4" fill="#0d1b2a"/>
-          <circle cx="38" cy="52" r="2" fill="#FFC107"/>
-          <circle cx="50" cy="52" r="4" fill="#0d1b2a"/>
-          <circle cx="50" cy="52" r="2" fill="#FFC107"/>
-          <!-- Outrigger -->
-          <rect x="20" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
-          <rect x="48" y="48" width="4" height="6" rx="1" fill="#e6a800"/>
-          <!-- Turntable / base of crane -->
-          <rect x="28" y="38" width="10" height="6" rx="1" fill="#e6a800"/>
-          <!-- Boom arm -->
-          <line x1="33" y1="40" x2="60" y2="6" stroke="#FFC107" stroke-width="3" stroke-linecap="round"/>
-          <!-- Counter-boom -->
-          <line x1="33" y1="40" x2="22" y2="30" stroke="#FFC107" stroke-width="2" stroke-linecap="round"/>
-          <!-- Hoist cable -->
-          <line x1="58" y1="8" x2="54" y2="28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
-          <!-- Hook -->
-          <circle cx="54" cy="30" r="2" fill="#ffffff" opacity="0.9"/>
-        </svg>
-        VT <span>KRAN</span>
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="img/logo.jpg" alt="VT KRAN" class="navbar-logo" />
       </a>
 
       <!-- Mobile Hamburger -->
@@ -996,7 +971,7 @@
             <a class="nav-link" href="#services" data-i18n="nav_services">Услуги</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fleet" data-i18n="nav_fleet">Нашата машина</a>
+            <a class="nav-link" href="#fleet" data-i18n="nav_fleet">Нашите машини</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#gallery" data-i18n="nav_gallery">Галерия</a>
@@ -1055,8 +1030,8 @@
 
           <p class="hero-subtitle" data-i18n="hero_subtitle">
             Предлагаме автокран под наем с квалифициран оператор с над
-            20 години опит. Разполагаме с Liebherr LTM 1025 с товароподемност
-            25 тона и стрела до 40 м, подходящ за строителни и монтажни
+            20 години опит. Разполагаме с Liebherr LTM 1025 (25 тона, стрела до 40 м) и
+            Liebherr LTM 1040 (40 тона, стрела до 44 м), подходящи за строителни и монтажни
             дейности в региона на Бургас.
           </p>
 
@@ -1077,16 +1052,16 @@
               <div class="hero-stat-label" data-i18n="stat_experience">Години опит</div>
             </div>
             <div>
-              <div class="hero-stat-number">25T</div>
+              <div class="hero-stat-number" data-i18n="stat_capacity_val">25T / 40T</div>
               <div class="hero-stat-label" data-i18n="stat_capacity">Товароподемност</div>
             </div>
             <div>
-              <div class="hero-stat-number">40m</div>
+              <div class="hero-stat-number" data-i18n="stat_reach_val">40m / 44m</div>
               <div class="hero-stat-label" data-i18n="stat_reach">Обсег на стрелата</div>
             </div>
             <div>
               <div class="hero-stat-number">Liebherr</div>
-              <div class="hero-stat-label">LTM 1025</div>
+              <div class="hero-stat-label" data-i18n="stat_models">LTM 1025 / LTM 1040</div>
             </div>
           </div>
         </div>
@@ -1119,8 +1094,8 @@
             <div class="service-icon">
               <i class="bi bi-arrow-up-circle-fill"></i>
             </div>
-            <h5 data-i18n="service1_title">Автокран под наем — 25T</h5>
-            <p data-i18n="service1_desc">Професионален автокран под наем с Liebherr LTM 1025. Товароподемност 25 тона и стрела до 40 метра за всякакви проекти.</p>
+            <h5 data-i18n="service1_title">Автокран под наем — 25T / 40T</h5>
+            <p data-i18n="service1_desc">Професионален автокран под наем с Liebherr LTM 1025 (25 тона, стрела до 40 м) и Liebherr LTM 1040 (40 тона, стрела до 44 м) за всякакви проекти.</p>
           </div>
         </div>
 
@@ -1183,8 +1158,8 @@
           <div class="strip-item">
             <div class="strip-icon"><i class="bi bi-gear-wide-connected"></i></div>
             <div>
-              <div class="strip-title">Liebherr LTM 1025</div>
-              <p class="strip-desc" data-i18n="strip2_desc">Първокласен кран с товароподемност 25 тона и стрела 40 м</p>
+              <div class="strip-title" data-i18n="strip2_title">Liebherr LTM 1025 / LTM 1040</div>
+              <p class="strip-desc" data-i18n="strip2_desc">Два първокласни крана: 25T / стрела 40 м и 40T / стрела 44 м</p>
             </div>
           </div>
         </div>
@@ -1220,14 +1195,22 @@
   <section class="fleet-section" id="fleet">
     <div class="container">
 
+      <div class="text-center mb-5">
+        <span class="section-label" data-i18n="fleet_label">Нашите машини</span>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.6);margin-bottom:2rem;" data-i18n="fleet_intro">
+          Разполагаме с два мобилни автокрана Liebherr, поддържани по най-високите стандарти,
+          оборудвани с уникален софтуер за предварително планиране от LIEBHERR за максимална
+          безопасност и прецизност при всяка задача.
+        </p>
+      </div>
+
       <div class="row justify-content-center g-5">
 
-        <!-- Specs -->
-        <div class="col-lg-8">
+        <!-- Crane 1: LTM 1025 -->
+        <div class="col-lg-6">
           <div class="text-center mb-4">
-            <span class="section-label" data-i18n="fleet_label">Нашата машина</span>
-            <h2 class="section-title" style="color:var(--white);">Liebherr LTM 1025</h2>
-            <p class="section-subtitle" style="color:rgba(255,255,255,0.6);margin-bottom:2rem;" data-i18n="fleet_subtitle">
+            <h2 class="section-title" style="color:var(--white);font-size:1.8rem;">Liebherr LTM 1025</h2>
+            <p class="section-subtitle" style="color:rgba(255,255,255,0.6);margin-bottom:1.5rem;" data-i18n="fleet_subtitle">
               Нашият мобилен автокран Liebherr LTM 1025 се поддържа по най-високите стандарти,
               оборудван с уникален софтуер за предварително планиране от LIEBHERR за максимална
               безопасност и прецизност при всяка задача.
@@ -1287,15 +1270,80 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="mt-4 text-center">
-            <a href="#contact" class="btn btn-hero-primary d-inline-flex align-items-center gap-2">
-              <i class="bi bi-chat-text-fill"></i>
-              <span data-i18n="fleet_btn_contact">Свържете се с нас</span>
-            </a>
+        <!-- Crane 2: LTM 1040 -->
+        <div class="col-lg-6">
+          <div class="text-center mb-4">
+            <h2 class="section-title" style="color:var(--white);font-size:1.8rem;">Liebherr LTM 1040</h2>
+            <p class="section-subtitle" style="color:rgba(255,255,255,0.6);margin-bottom:1.5rem;" data-i18n="fleet2_subtitle">
+              Нашият мобилен автокран Liebherr LTM 1040 с товароподемност 40 тона и дължина на стрелата
+              до 44 метра — идеален за по-тежки и по-високи проекти.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-arrow-up"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_capacity_label">Товароподемност</div>
+                  <div class="spec-value" data-i18n="spec2_capacity_value">40 тона</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-rulers"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_reach_label">Максимален обсег на стрелата</div>
+                  <div class="spec-value" data-i18n="spec2_reach_value">До 44 метра</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-building-fill-gear"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_application_label">Приложение</div>
+                  <div class="spec-value" data-i18n="spec2_application_value">Строителство и монтаж</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_area_label">Зона на обслужване</div>
+                  <div class="spec-value" data-i18n="spec2_area_value">Бургас, Поморие, Несебър и региона</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-laptop"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_software_label">Софтуер за планиране</div>
+                  <div class="spec-value" data-i18n="spec2_software_value">Система за предварително планиране LIEBHERR</div>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon"><i class="bi bi-person-badge-fill"></i></div>
+                <div>
+                  <div class="spec-label" data-i18n="spec2_operator_label">Оператор</div>
+                  <div class="spec-value" data-i18n="spec2_operator_value">Квалифициран — 20+ години опит</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+      </div>
+
+      <div class="mt-4 text-center">
+        <a href="#contact" class="btn btn-hero-primary d-inline-flex align-items-center gap-2">
+          <i class="bi bi-chat-text-fill"></i>
+          <span data-i18n="fleet_btn_contact">Свържете се с нас</span>
+        </a>
       </div>
     </div>
   </section>
@@ -1308,9 +1356,9 @@
     <div class="container">
       <div class="text-center mb-5">
         <span class="section-label" data-i18n="gallery_label">Галерия</span>
-        <h2 class="section-title" data-i18n="gallery_title">Автокран Liebherr 25T под наем в Бургас</h2>
+        <h2 class="section-title" data-i18n="gallery_title">Автокрани Liebherr под наем в Бургас</h2>
         <p class="section-subtitle mx-auto" data-i18n="gallery_subtitle">
-          Вижте нашия Liebherr LTM 1025 в действие при строителни и монтажни проекти
+          Вижте нашите автокрани Liebherr LTM 1025 и LTM 1040 в действие при строителни и монтажни проекти
           в Бургас, Поморие, Несебър и региона.
         </p>
       </div>
@@ -1336,6 +1384,12 @@
           <div class="gallery-slide">
             <img src="img/crane5.jpg" alt="Liebherr 25T Crane for Hire in Burgas" loading="lazy" />
           </div>
+          <div class="gallery-slide">
+            <img src="img/craneB.jpg" alt="Liebherr 40T LTM 1040 Crane for Hire in Burgas" loading="lazy" />
+          </div>
+          <div class="gallery-slide">
+            <img src="img/craneb1.jpg" alt="Liebherr 40T LTM 1040 Crane for Hire in Burgas" loading="lazy" />
+          </div>
         </div>
 
         <!-- Navigation Arrows -->
@@ -1355,6 +1409,8 @@
         <button class="gallery-dot" data-index="3" aria-label="Go to image 4"></button>
         <button class="gallery-dot" data-index="4" aria-label="Go to image 5"></button>
         <button class="gallery-dot" data-index="5" aria-label="Go to image 6"></button>
+        <button class="gallery-dot" data-index="6" aria-label="Go to image 7"></button>
+        <button class="gallery-dot" data-index="7" aria-label="Go to image 8"></button>
       </div>
 
       <!-- Thumbnail Strip -->
@@ -1376,6 +1432,12 @@
         </button>
         <button class="gallery-thumb" data-index="5">
           <img src="img/crane5.jpg" alt="Thumbnail 6" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="6">
+          <img src="img/craneB.jpg" alt="Thumbnail 7" loading="lazy" />
+        </button>
+        <button class="gallery-thumb" data-index="7">
+          <img src="img/craneb1.jpg" alt="Thumbnail 8" loading="lazy" />
         </button>
       </div>
     </div>
@@ -1500,7 +1562,7 @@
           <ul class="footer-links">
             <li><a href="#home" data-i18n="nav_home">Начало</a></li>
             <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
-            <li><a href="#fleet" data-i18n="nav_fleet">Нашата машина</a></li>
+            <li><a href="#fleet" data-i18n="nav_fleet">Нашите машини</a></li>
             <li><a href="#gallery" data-i18n="nav_gallery">Галерия</a></li>
             <li><a href="#contact" data-i18n="nav_contact">Контакт</a></li>
           </ul>
@@ -1510,7 +1572,7 @@
         <div class="col-6 col-md-3">
           <div class="footer-heading" data-i18n="footer_services_heading">Услуги</div>
           <ul class="footer-links">
-            <li><a href="#services" data-i18n="footer_service1">Автокран под наем — 25T</a></li>
+            <li><a href="#services" data-i18n="footer_service1">Автокран под наем — 25T / 40T</a></li>
             <li><a href="#services" data-i18n="footer_service2">Труднодостъпни обекти</a></li>
             <li><a href="#services" data-i18n="footer_service3">Квалифициран оператор</a></li>
             <li><a href="#services" data-i18n="footer_service4">Софтуер за планиране</a></li>
@@ -1518,13 +1580,16 @@
         </div>
 
         <!-- Machine Info -->
-        <div class="col-md-2">
-          <div class="footer-heading" data-i18n="footer_machine_heading">Нашата машина</div>
+        <div class="col-md-3">
+          <div class="footer-heading" data-i18n="footer_machine_heading">Нашите машини</div>
           <ul class="footer-links">
             <li><i class="bi bi-gear-fill me-1" style="color:var(--yellow);"></i> Liebherr LTM 1025</li>
             <li><i class="bi bi-arrow-up me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_capacity">25 тона товароподемност</span></li>
-            <li><i class="bi bi-rulers me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_reach">Стрела 40 м</span></li>
-            <li><i class="bi bi-person-badge-fill me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_exp">20+ години опит</span></li>
+            <li><i class="bi bi-rulers me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_reach">Стрела до 40 м</span></li>
+            <li class="mt-2"><i class="bi bi-gear-fill me-1" style="color:var(--yellow);"></i> Liebherr LTM 1040</li>
+            <li><i class="bi bi-arrow-up me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine2_capacity">40 тона товароподемност</span></li>
+            <li><i class="bi bi-rulers me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine2_reach">Стрела до 44 м</span></li>
+            <li class="mt-2"><i class="bi bi-person-badge-fill me-1" style="color:var(--yellow);"></i> <span data-i18n="footer_machine_exp">20+ години опит</span></li>
           </ul>
         </div>
 
@@ -1686,33 +1751,36 @@
         bg: {
           /* Meta & Title */
           title: 'ВТ КРАН - Автокран под наем | Бургас, Поморие, Несебър',
-          description: 'ВТ КРАН ООД - Автокран под наем в Бургас, Поморие, Несебър и региона. Liebherr LTM 1025, товароподемност 25 тона, стрела до 40 м. Квалифициран оператор с над 20 години опит.',
+          description: 'ВТ КРАН ООД - Автокран под наем в Бургас, Поморие, Несебър и региона. Liebherr LTM 1025 (25 тона, стрела до 40 м) и Liebherr LTM 1040 (40 тона, стрела до 44 м). Квалифициран оператор с над 20 години опит.',
           'og:title': 'ВТ КРАН - Автокран под наем в Бургас, Поморие и Несебър',
-          'og:description': 'Професионални услуги с автокран Liebherr LTM 1025. Товароподемност 25 тона, квалифициран оператор с над 20 години опит.',
+          'og:description': 'Професионални услуги с автокрани Liebherr LTM 1025 и LTM 1040. Товароподемност до 40 тона, квалифициран оператор с над 20 години опит.',
 
           /* Navbar */
           nav_home: 'Начало',
           nav_services: 'Услуги',
-          nav_fleet: 'Нашата машина',
+          nav_fleet: 'Нашите машини',
           nav_gallery: 'Галерия',
           nav_contact: 'Контакт',
 
           /* Hero */
           hero_badge: 'Квалифициран оператор с над 20 години опит',
           hero_title: '<span class="highlight">Автокран под наем</span><br>в Бургас, Поморие<br>и Несебър',
-          hero_subtitle: 'Предлагаме автокран под наем с квалифициран оператор с над 20 години опит. Разполагаме с Liebherr LTM 1025 с товароподемност 25 тона и стрела до 40 м, подходящ за строителни и монтажни дейности в региона на Бургас.',
+          hero_subtitle: 'Предлагаме автокран под наем с квалифициран оператор с над 20 години опит. Разполагаме с Liebherr LTM 1025 (25 тона, стрела до 40 м) и Liebherr LTM 1040 (40 тона, стрела до 44 м), подходящи за строителни и монтажни дейности в региона на Бургас.',
           hero_btn_contact: 'Свържете се с нас',
           hero_btn_call: 'Обадете се',
           stat_experience: 'Години опит',
           stat_capacity: 'Товароподемност',
+          stat_capacity_val: '25T / 40T',
           stat_reach: 'Обсег на стрелата',
+          stat_reach_val: '40m / 44m',
+          stat_models: 'LTM 1025 / LTM 1040',
 
           /* Services */
           services_label: 'Какво правим',
           services_title: 'Нашите услуги',
           services_subtitle: 'ВТ КРАН ООД предоставя професионални услуги с автокран в региона на Бургас — Бургас, Поморие, Несебър и околностите.',
-          service1_title: 'Автокран под наем — 25T',
-          service1_desc: 'Професионален автокран под наем с Liebherr LTM 1025. Товароподемност 25 тона и стрела до 40 метра за всякакви проекти.',
+          service1_title: 'Автокран под наем — 25T / 40T',
+          service1_desc: 'Професионален автокран под наем с Liebherr LTM 1025 (25 тона, стрела до 40 м) и Liebherr LTM 1040 (40 тона, стрела до 44 м) за всякакви проекти.',
           service2_title: 'Труднодостъпни обекти',
           service2_desc: 'Специализираме се в работа на труднодостъпни места, където прецизността и опитът са от съществено значение за безопасна и ефективна работа.',
           service3_title: 'Квалифициран оператор',
@@ -1723,15 +1791,18 @@
           /* Strip */
           strip1_title: '20+ години опит',
           strip1_desc: 'Квалифициран оператор с над две десетилетия практически опит',
-          strip2_desc: 'Първокласен кран с товароподемност 25 тона и стрела 40 м',
+          strip2_title: 'Liebherr LTM 1025 / LTM 1040',
+          strip2_desc: 'Два първокласни крана: 25T / стрела 40 м и 40T / стрела 44 м',
           strip3_title: 'Умно планиране',
           strip3_desc: 'Уникален софтуер от LIEBHERR за предварително планиране на всеки работен процес',
           strip4_title: 'Регионално покритие',
           strip4_desc: 'Обслужваме Бургас, Поморие, Несебър и околностите',
 
           /* Fleet */
-          fleet_label: 'Нашата машина',
+          fleet_label: 'Нашите машини',
+          fleet_intro: 'Разполагаме с два мобилни автокрана Liebherr, поддържани по най-високите стандарти, оборудвани с уникален софтуер за предварително планиране от LIEBHERR за максимална безопасност и прецизност при всяка задача.',
           fleet_subtitle: 'Нашият мобилен автокран Liebherr LTM 1025 се поддържа по най-високите стандарти, оборудван с уникален софтуер за предварително планиране от LIEBHERR за максимална безопасност и прецизност при всяка задача.',
+          fleet2_subtitle: 'Нашият мобилен автокран Liebherr LTM 1040 с товароподемност 40 тона и дължина на стрелата до 44 метра — идеален за по-тежки и по-високи проекти.',
           fleet_btn_contact: 'Свържете се с нас',
           spec_capacity_label: 'Товароподемност',
           spec_capacity_value: '25 тона',
@@ -1745,11 +1816,23 @@
           spec_software_value: 'Система за предварително планиране LIEBHERR',
           spec_operator_label: 'Оператор',
           spec_operator_value: 'Квалифициран — 20+ години опит',
+          spec2_capacity_label: 'Товароподемност',
+          spec2_capacity_value: '40 тона',
+          spec2_reach_label: 'Максимален обсег на стрелата',
+          spec2_reach_value: 'До 44 метра',
+          spec2_application_label: 'Приложение',
+          spec2_application_value: 'Строителство и монтаж',
+          spec2_area_label: 'Зона на обслужване',
+          spec2_area_value: 'Бургас, Поморие, Несебър и региона',
+          spec2_software_label: 'Софтуер за планиране',
+          spec2_software_value: 'Система за предварително планиране LIEBHERR',
+          spec2_operator_label: 'Оператор',
+          spec2_operator_value: 'Квалифициран — 20+ години опит',
 
           /* Gallery */
           gallery_label: 'Галерия',
-          gallery_title: 'Автокран Liebherr 25T под наем в Бургас',
-          gallery_subtitle: 'Вижте нашия Liebherr LTM 1025 в действие при строителни и монтажни проекти в Бургас, Поморие, Несебър и региона.',
+          gallery_title: 'Автокрани Liebherr под наем в Бургас',
+          gallery_subtitle: 'Вижте нашите автокрани Liebherr LTM 1025 и LTM 1040 в действие при строителни и монтажни проекти в Бургас, Поморие, Несебър и региона.',
 
           /* Contact */
           contact_label: 'Свържете се',
@@ -1767,13 +1850,15 @@
           footer_area: 'Бургас, Поморие, Несебър и региона',
           footer_quick_links: 'Бързи връзки',
           footer_services_heading: 'Услуги',
-          footer_service1: 'Автокран под наем — 25T',
+          footer_service1: 'Автокран под наем — 25T / 40T',
           footer_service2: 'Труднодостъпни обекти',
           footer_service3: 'Квалифициран оператор',
           footer_service4: 'Софтуер за планиране',
-          footer_machine_heading: 'Нашата машина',
+          footer_machine_heading: 'Нашите машини',
           footer_machine_capacity: '25 тона товароподемност',
-          footer_machine_reach: 'Стрела 40 м',
+          footer_machine_reach: 'Стрела до 40 м',
+          footer_machine2_capacity: '40 тона товароподемност',
+          footer_machine2_reach: 'Стрела до 44 м',
           footer_machine_exp: '20+ години опит',
           footer_rights: 'Всички права запазени.',
           footer_privacy: 'Политика за поверителност',
@@ -1783,33 +1868,36 @@
         en: {
           /* Meta & Title */
           title: 'VT KRAN - Mobile Crane for Hire | Burgas, Pomorie, Nessebar',
-          description: 'VT KRAN OOD - Mobile Crane for Hire in Burgas, Pomorie, Nessebar and the region. Liebherr LTM 1025, 25-tonne capacity, boom reach up to 40 m. Qualified operator with 20+ years of experience.',
+          description: 'VT KRAN OOD - Mobile Crane for Hire in Burgas, Pomorie, Nessebar and the region. Liebherr LTM 1025 (25-tonne, boom up to 40 m) and Liebherr LTM 1040 (40-tonne, boom up to 44 m). Qualified operator with 20+ years of experience.',
           'og:title': 'VT KRAN - Mobile Crane for Hire in Burgas, Pomorie & Nessebar',
-          'og:description': 'Professional mobile crane services with Liebherr LTM 1025. 25-tonne capacity, qualified operator with 20+ years of experience.',
+          'og:description': 'Professional mobile crane services with Liebherr LTM 1025 and LTM 1040. Lifting capacity up to 40 tonnes, qualified operator with 20+ years of experience.',
 
           /* Navbar */
           nav_home: 'Home',
           nav_services: 'Services',
-          nav_fleet: 'Our Machine',
+          nav_fleet: 'Our Machines',
           nav_gallery: 'Gallery',
           nav_contact: 'Contact',
 
           /* Hero */
           hero_badge: 'Qualified Operator with 20+ Years Experience',
           hero_title: 'Mobile <span class="highlight">Crane for Hire</span><br>in Burgas, Pomorie<br>& Nessebar',
-          hero_subtitle: 'We offer a mobile crane for hire with a qualified operator with over 20 years of experience. We operate a Liebherr LTM 1025 with a 25-tonne lifting capacity and boom reach up to 40 m, suitable for construction and installation work in the Burgas region.',
+          hero_subtitle: 'We offer mobile cranes for hire with a qualified operator with over 20 years of experience. We operate a Liebherr LTM 1025 (25-tonne, boom up to 40 m) and a Liebherr LTM 1040 (40-tonne, boom up to 44 m), suitable for construction and installation work in the Burgas region.',
           hero_btn_contact: 'Contact Us',
           hero_btn_call: 'Call Now',
           stat_experience: 'Years Experience',
           stat_capacity: 'Lifting Capacity',
+          stat_capacity_val: '25T / 40T',
           stat_reach: 'Boom Reach',
+          stat_reach_val: '40m / 44m',
+          stat_models: 'LTM 1025 / LTM 1040',
 
           /* Services */
           services_label: 'What We Do',
           services_title: 'Our Services',
           services_subtitle: 'VT KRAN OOD provides professional mobile crane services in the Burgas region — Burgas, Pomorie, Nessebar, and surrounding areas.',
-          service1_title: 'Crane Hire Services — 25T',
-          service1_desc: 'Professional mobile crane hire with Liebherr LTM 1025. 25-tonne lifting capacity with boom reach up to 40 metres for all types of projects.',
+          service1_title: 'Crane Hire Services — 25T / 40T',
+          service1_desc: 'Professional mobile crane hire with Liebherr LTM 1025 (25-tonne, boom up to 40 m) and Liebherr LTM 1040 (40-tonne, boom up to 44 m) for all types of projects.',
           service2_title: 'Hard-to-Reach Sites',
           service2_desc: 'We specialize in working at difficult-to-access locations where precision and experience are essential for safe and efficient operations.',
           service3_title: 'Qualified Operator',
@@ -1820,15 +1908,18 @@
           /* Strip */
           strip1_title: '20+ Years Experience',
           strip1_desc: 'Qualified operator with over two decades of hands-on expertise',
-          strip2_desc: 'Premium crane with 25-tonne capacity and 40 m boom reach',
+          strip2_title: 'Liebherr LTM 1025 / LTM 1040',
+          strip2_desc: 'Two premium cranes: 25T / 40 m boom and 40T / 44 m boom',
           strip3_title: 'Smart Planning',
           strip3_desc: 'Unique LIEBHERR software for pre-planning of every work process',
           strip4_title: 'Regional Coverage',
           strip4_desc: 'Serving Burgas, Pomorie, Nessebar and the surrounding area',
 
           /* Fleet */
-          fleet_label: 'Our Machine',
+          fleet_label: 'Our Machines',
+          fleet_intro: 'We operate two Liebherr mobile cranes, maintained to the highest standards, equipped with unique LIEBHERR pre-planning software for maximum safety and precision on every job.',
           fleet_subtitle: 'Our Liebherr LTM 1025 mobile crane is maintained to the highest standards, equipped with unique LIEBHERR pre-planning software for maximum safety and precision on every job.',
+          fleet2_subtitle: 'Our Liebherr LTM 1040 mobile crane with 40-tonne lifting capacity and boom reach up to 44 metres — ideal for heavier and taller projects.',
           fleet_btn_contact: 'Contact Us',
           spec_capacity_label: 'Lifting Capacity',
           spec_capacity_value: '25 Tonnes',
@@ -1842,11 +1933,23 @@
           spec_software_value: 'LIEBHERR Pre-Planning System',
           spec_operator_label: 'Operator',
           spec_operator_value: 'Qualified — 20+ Years Experience',
+          spec2_capacity_label: 'Lifting Capacity',
+          spec2_capacity_value: '40 Tonnes',
+          spec2_reach_label: 'Maximum Boom Reach',
+          spec2_reach_value: 'Up to 44 Metres',
+          spec2_application_label: 'Application',
+          spec2_application_value: 'Construction & Installation',
+          spec2_area_label: 'Service Area',
+          spec2_area_value: 'Burgas, Pomorie, Nessebar & Region',
+          spec2_software_label: 'Planning Software',
+          spec2_software_value: 'LIEBHERR Pre-Planning System',
+          spec2_operator_label: 'Operator',
+          spec2_operator_value: 'Qualified — 20+ Years Experience',
 
           /* Gallery */
           gallery_label: 'Gallery',
-          gallery_title: 'Liebherr 25T Crane for Hire in Burgas',
-          gallery_subtitle: 'See our Liebherr LTM 1025 in action across construction and installation projects in Burgas, Pomorie, Nessebar and the region.',
+          gallery_title: 'Liebherr Cranes for Hire in Burgas',
+          gallery_subtitle: 'See our Liebherr LTM 1025 and LTM 1040 in action across construction and installation projects in Burgas, Pomorie, Nessebar and the region.',
 
           /* Contact */
           contact_label: 'Get in Touch',
@@ -1864,13 +1967,15 @@
           footer_area: 'Burgas, Pomorie, Nessebar & region',
           footer_quick_links: 'Quick Links',
           footer_services_heading: 'Services',
-          footer_service1: 'Crane Hire — 25T',
+          footer_service1: 'Crane Hire — 25T / 40T',
           footer_service2: 'Hard-to-Reach Sites',
           footer_service3: 'Qualified Operator',
           footer_service4: 'Pre-Planning Software',
-          footer_machine_heading: 'Our Machine',
+          footer_machine_heading: 'Our Machines',
           footer_machine_capacity: '25 Tonnes Capacity',
-          footer_machine_reach: '40 m Boom Reach',
+          footer_machine_reach: 'Boom up to 40 m',
+          footer_machine2_capacity: '40 Tonnes Capacity',
+          footer_machine2_reach: 'Boom up to 44 m',
           footer_machine_exp: '20+ Years Exp.',
           footer_rights: 'All rights reserved.',
           footer_privacy: 'Privacy Policy',
@@ -1880,9 +1985,9 @@
         ru: {
           /* Meta & Title */
           title: 'ВТ КРАН - Автокран в аренду | Бургас, Поморие, Несебр',
-          description: 'ВТ КРАН ООД - Автокран в аренду в Бургасе, Поморие, Несебре и регионе. Liebherr LTM 1025, грузоподъёмность 25 тонн, вылет стрелы до 40 м. Квалифицированный оператор с более чем 20-летним опытом.',
+          description: 'ВТ КРАН ООД - Автокран в аренду в Бургасе, Поморие, Несебре и регионе. Liebherr LTM 1025 (25 тонн, стрела до 40 м) и Liebherr LTM 1040 (40 тонн, стрела до 44 м). Квалифицированный оператор с более чем 20-летним опытом.',
           'og:title': 'ВТ КРАН - Автокран в аренду в Бургасе, Поморие и Несебре',
-          'og:description': 'Профессиональные услуги автокрана Liebherr LTM 1025. Грузоподъёмность 25 тонн, квалифицированный оператор с более чем 20-летним опытом.',
+          'og:description': 'Профессиональные услуги автокранов Liebherr LTM 1025 и LTM 1040. Грузоподъёмность до 40 тонн, квалифицированный оператор с более чем 20-летним опытом.',
 
           /* Navbar */
           nav_home: 'Главная',
@@ -1894,19 +1999,22 @@
           /* Hero */
           hero_badge: 'Квалифицированный оператор с более чем 20-летним опытом',
           hero_title: '<span class="highlight">Автокран в аренду</span><br>в Бургасе, Поморие<br>и Несебре',
-          hero_subtitle: 'Предлагаем автокран в аренду с квалифицированным оператором с более чем 20-летним опытом. Мы работаем на Liebherr LTM 1025 с грузоподъёмностью 25 тонн и вылетом стрелы до 40 м, подходящим для строительных и монтажных работ в регионе Бургаса.',
+          hero_subtitle: 'Предлагаем автокран в аренду с квалифицированным оператором с более чем 20-летним опытом. Мы работаем на Liebherr LTM 1025 (25 тонн, стрела до 40 м) и Liebherr LTM 1040 (40 тонн, стрела до 44 м), подходящих для строительных и монтажных работ в регионе Бургаса.',
           hero_btn_contact: 'Свяжитесь с нами',
           hero_btn_call: 'Позвоните',
           stat_experience: 'Лет опыта',
           stat_capacity: 'Грузоподъёмность',
+          stat_capacity_val: '25T / 40T',
           stat_reach: 'Вылет стрелы',
+          stat_reach_val: '40m / 44m',
+          stat_models: 'LTM 1025 / LTM 1040',
 
           /* Services */
           services_label: 'Чем мы занимаемся',
           services_title: 'Наши услуги',
           services_subtitle: 'ВТ КРАН ООД предоставляет профессиональные услуги автокрана в регионе Бургаса — Бургас, Поморие, Несебр и окрестности.',
-          service1_title: 'Аренда автокрана — 25T',
-          service1_desc: 'Профессиональная аренда автокрана Liebherr LTM 1025. Грузоподъёмность 25 тонн и вылет стрелы до 40 метров для любых проектов.',
+          service1_title: 'Аренда автокрана — 25T / 40T',
+          service1_desc: 'Профессиональная аренда автокранов Liebherr LTM 1025 (25 тонн, стрела до 40 м) и Liebherr LTM 1040 (40 тонн, стрела до 44 м) для любых проектов.',
           service2_title: 'Труднодоступные объекты',
           service2_desc: 'Мы специализируемся на работе в труднодоступных местах, где точность и опыт необходимы для безопасного и эффективного выполнения работ.',
           service3_title: 'Квалифицированный оператор',
@@ -1917,7 +2025,8 @@
           /* Strip */
           strip1_title: '20+ лет опыта',
           strip1_desc: 'Квалифицированный оператор с более чем двадцатилетним практическим опытом',
-          strip2_desc: 'Первоклассный кран грузоподъёмностью 25 тонн и вылетом стрелы 40 м',
+          strip2_title: 'Liebherr LTM 1025 / LTM 1040',
+          strip2_desc: 'Два первоклассных крана: 25T / стрела 40 м и 40T / стрела 44 м',
           strip3_title: 'Умное планирование',
           strip3_desc: 'Уникальное ПО от LIEBHERR для предварительного планирования каждого рабочего процесса',
           strip4_title: 'Региональное покрытие',
@@ -1925,7 +2034,9 @@
 
           /* Fleet */
           fleet_label: 'Наша техника',
+          fleet_intro: 'Мы располагаем двумя мобильными автокранами Liebherr, обслуживаемыми по самым высоким стандартам, оснащёнными уникальным программным обеспечением LIEBHERR для предварительного планирования, обеспечивая максимальную безопасность и точность при каждой работе.',
           fleet_subtitle: 'Наш мобильный автокран Liebherr LTM 1025 обслуживается по самым высоким стандартам, оснащён уникальным программным обеспечением LIEBHERR для предварительного планирования, обеспечивая максимальную безопасность и точность при каждой работе.',
+          fleet2_subtitle: 'Наш мобильный автокран Liebherr LTM 1040 с грузоподъёмностью 40 тонн и вылетом стрелы до 44 метров — идеален для более тяжёлых и высотных проектов.',
           fleet_btn_contact: 'Свяжитесь с нами',
           spec_capacity_label: 'Грузоподъёмность',
           spec_capacity_value: '25 тонн',
@@ -1939,11 +2050,23 @@
           spec_software_value: 'Система предварительного планирования LIEBHERR',
           spec_operator_label: 'Оператор',
           spec_operator_value: 'Квалифицированный — 20+ лет опыта',
+          spec2_capacity_label: 'Грузоподъёмность',
+          spec2_capacity_value: '40 тонн',
+          spec2_reach_label: 'Максимальный вылет стрелы',
+          spec2_reach_value: 'До 44 метров',
+          spec2_application_label: 'Применение',
+          spec2_application_value: 'Строительство и монтаж',
+          spec2_area_label: 'Зона обслуживания',
+          spec2_area_value: 'Бургас, Поморие, Несебр и регион',
+          spec2_software_label: 'ПО для планирования',
+          spec2_software_value: 'Система предварительного планирования LIEBHERR',
+          spec2_operator_label: 'Оператор',
+          spec2_operator_value: 'Квалифицированный — 20+ лет опыта',
 
           /* Gallery */
           gallery_label: 'Галерея',
-          gallery_title: 'Автокран Liebherr 25T в аренду в Бургасе',
-          gallery_subtitle: 'Посмотрите наш Liebherr LTM 1025 в действии на строительных и монтажных проектах в Бургасе, Поморие, Несебре и регионе.',
+          gallery_title: 'Автокраны Liebherr в аренду в Бургасе',
+          gallery_subtitle: 'Посмотрите наши автокраны Liebherr LTM 1025 и LTM 1040 в действии на строительных и монтажных проектах в Бургасе, Поморие, Несебре и регионе.',
 
           /* Contact */
           contact_label: 'Свяжитесь с нами',
@@ -1961,13 +2084,15 @@
           footer_area: 'Бургас, Поморие, Несебр и регион',
           footer_quick_links: 'Быстрые ссылки',
           footer_services_heading: 'Услуги',
-          footer_service1: 'Аренда автокрана — 25T',
+          footer_service1: 'Аренда автокрана — 25T / 40T',
           footer_service2: 'Труднодоступные объекты',
           footer_service3: 'Квалифицированный оператор',
           footer_service4: 'ПО для планирования',
           footer_machine_heading: 'Наша техника',
           footer_machine_capacity: '25 тонн грузоподъёмность',
-          footer_machine_reach: 'Стрела 40 м',
+          footer_machine_reach: 'Стрела до 40 м',
+          footer_machine2_capacity: '40 тонн грузоподъёмность',
+          footer_machine2_reach: 'Стрела до 44 м',
           footer_machine_exp: '20+ лет опыта',
           footer_rights: 'Все права защищены.',
           footer_privacy: 'Политика конфиденциальности',
